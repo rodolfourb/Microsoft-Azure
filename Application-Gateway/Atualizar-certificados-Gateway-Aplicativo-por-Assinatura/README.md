@@ -40,7 +40,7 @@ foreach($subscriptionName in $subscriptions) {
             Write-Host  "Application Gateway: ["$($AppGW.Name)"] selected" -ForegroundColor White;
         
             #Get a list of SSL certificates with a filter for the certificate name, if you have more than one.
-            $Certs = Get-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW  | where {($_.Name -like "*lgrh.com.br")}  
+            $Certs = Get-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW  | where {($_.Name -like "*Name_certificate*")}  
 
             if($Certs){
 
