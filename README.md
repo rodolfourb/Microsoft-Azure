@@ -6,19 +6,19 @@ Experimente no Azure Cloud Shell
 
 [![CloudShellIcon](https://shell.azure.com/images/launchcloudshell.png)](https://shell.azure.com/powershell)
 
-## Modules
+## Módulos
 Abaixo está uma tabela contendo nosso módulo de rollup do Azure PowerShell.
 
-Descrição       | Nome do Módulo  | PowerShell Gallery Link
+Descrição       | Nome do Módulo  | Galeria PowerShell Link
 ----------------- | ------------ | -----------------------
 Azure PowerShell  | `Az`         | [![Az](https://img.shields.io/powershellgallery/v/Az.svg?style=flat-square&label=Az)](https://www.powershellgallery.com/packages/Az/4.5.0)
 
 
 
 
-## Installation
+## Instalação
 
-### PowerShell Gallery
+### Galeria PowerShell
 
 Execute o seguinte comando em uma sessão elevada do PowerShell para instalar o módulo de rollup para cmdlets do Azure PowerShell:
 
@@ -38,7 +38,7 @@ Update-Module -Name Az
 
 Para obter instruções detalhadas sobre a instalação do Azure PowerShell, consulte o [guia de instalação](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps).
 
-## Usage
+## Modo de uso
 
 ### Login no Azure
 
