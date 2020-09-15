@@ -37,3 +37,25 @@ Update-Module -Name Az
 `Update-Module` instala a nova versão lado a lado com as versões anteriores. Não desinstala as versões anteriores.
 
 Para obter instruções detalhadas sobre a instalação do Azure PowerShell, consulte o [guia de instalação](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps).
+
+## Usage
+
+### Login no Azure
+
+Para se conectar ao Azure, use o [`Connect-AzAccount`](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount) cmdlet:
+
+```powershell
+# Login do código do dispositivo - fornece um link para entrar no Azure por meio do seu navegador da web
+Connect-AzAccount
+
+# Login principal de serviço - Use um principal de serviço criado anteriormente para fazer login
+Connect-AzAccount -ServicePrincipal -ApplicationId 'http://my-app' -Credential $PSCredential -TenantId $TenantId
+```
+
+Para entrar em uma nuvem específica (_AzureChinaCloud_, _AzureCloud_, _AzureGermanCloud_, _AzureUSGovernment_), use o parâmetro: `-Environment` 
+
+```powershell
+# Login de nuvem específico - faz login na nuvem Azure China
+Connect-AzAccount -Environment AzureChinaCloud
+```
+
